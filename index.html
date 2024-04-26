@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Bootstrap Avançado</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+
+    <style>
+        .card-img-overlay {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mb-4 mt-4">EXERCÍCIO BOOTSTRAP AVANÇADO</h1>
+        <div id="carousel-exemplo" class="carousel carousel-fade slide mb-4 mt-4" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100 rounded" src="https://cdn.vox-cdn.com/thumbor/K4Fzm8J1vTz0tP5rsYanpA5VqhQ=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/22932138/the_batman_2022_movie_trailer.jpg" alt="Cena do filme The Batman">
+                    <div class="carousel-caption">
+                        <h4 class="bg-light text-dark rounded p-1">The Batman - 2022</h4>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100 rounded" src="https://play-lh.googleusercontent.com/proxy/PoG51do0q0tdOW5PCYtAhT7gV7lN9QIAgkFUxTiE2nd-8fi2jR7Rt8Unmog5miSlECMa0gycYV33GrApYRkyKZ3AZuK_Mk7rAfMwYCw5yHnLwdZYYCOzb2n_=s3840-w3840-h2160" alt="Cena do filme Batman vs Superman: A Origem da Justiça">
+                    <div class="carousel-caption">
+                        <h4 class="bg-light text-dark rounded p-1">Batman vs Superman: A Origem da Justiça - 2016</h4>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100 rounded" src="https://images.mubicdn.net/images/film/3364/cache-10094-1647520875/image-w1280.jpg" alt="Cena do filme Batman Begins">
+                    <div class="carousel-caption">
+                        <h4 class="bg-light text-dark rounded p-1">Batman Begins - 2005</h4>
+                    </div>
+                </div>
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button class="active" type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mt-4">
+                <div class="card text-bg-dark w-85 mx-auto">
+                    <img src="https://upload.wikimedia.org/wikipedia/pt/3/38/The_Batman_poster.jpg" />
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">The Batman</h4>
+                        <p class="card-text">
+                            Batman (The Batman, no original) segue o segundo ano de Bruce Wayne (Robert Pattinson) como o herói de Gotham, causando medo nos corações dos criminosos da sombria cidade.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mt-4">
+                <div class="card text-bg-dark  w-85 mx-auto">
+                    <img src="https://img.elo7.com.br/product/zoom/264FDDF/big-poster-filme-batman-vs-superman-lo06-tamanho-90x60-cm-superman.jpg" />
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Batman Vs Superman - A Origem Da Justiça</h4>
+                        <p class="card-text">
+                            Em Batman Vs Superman - A Origem Da Justiça, o confronto entre Superman (Henry Cavill) e Zod (Michael Shannon) em Metrópolis fez com que a população mundial se dividisse acerca da existência de extra-terrestres na Terra. Enquanto muitos consideram o Superman como um novo deus, há aqueles que consideram extremamente perigoso que haja um ser tão poderoso sem qualquer tipo de controle.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mt-4">
+                <div class="card text-bg-dark  w-85 mx-auto">
+                    <img src="https://m.media-amazon.com/images/I/71HA+NK2f1L.jpg" />
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Batman Begins</h4>
+                        <p class="card-text">
+                            Marcado pelo assassinato de seus pais quando ainda era criança, o milionário Bruce Wayne (Christian Bale) decide viajar pelo mundo em busca de encontrar meios que lhe permitam combater a injustiça e provocar medo em seus adversários. Após retornar a Gotham City, sua cidade-natal, ele idealiza seu alter-ego: Batman, um justiceiro mascarado que usa força, inteligência e um arsenal tecnológico para combater o crime.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
